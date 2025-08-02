@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form>
+        <!-- 1. Personal Information -->
+        <fieldset>
+            <legend>1. Personal Information</legend>
+            First Name: <input type="text" name="firstName" required><br><br>
+            Last Name: <input type="text" name="lastName" required><br><br>
+            Date of Birth: <input type="date" name="dob"><br><br>
+            Gender:
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other<br><br>
+            Email Address: <input type="email" name="email"><br><br>
+            Mobile Number: <input type="tel" name="mobile"><br><br>
+            Favorite Color: <input type="color" name="favColor"><br><br>
+        </fieldset>
+
+        <!-- 2. Academic Information -->
+        <fieldset>
+            <legend>2. Academic Information</legend>
+            Roll Number: <input type="number" name="roll"><br><br>
+            Year of Admission: <input type="number" name="admissionYear"><br><br>
+            Course / Branch:
+            <select name="course">
+                <option value="CSE">Computer Science</option>
+                <option value="ECE">Electronics</option>
+                <option value="ME">Mechanical</option>
+                <option value="CE">Civil</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+            Rate Your Coding Skills: <input type="range" name="codingSkills" min="1" max="10"><br><br>
+            Preferred Lab Time: <input type="time" name="labTime"><br><br>
+            Graduation Month: <input type="month" name="gradMonth"><br><br>
+        </fieldset>
+
+        <!-- 3. Documents Upload -->
+        <fieldset>
+            <legend>3. Documents Upload</legend>
+            Passport Size Photo: <input type="file" name="photo"><br><br>
+            Upload Marksheet or ID Proof: <input type="file" name="document"><br><br>
+        </fieldset>
+
+        <!-- 4. Additional Info -->
+        <fieldset>
+            <legend>4. Additional Info</legend>
+            Personal Website / LinkedIn: <input type="url" name="website"><br><br>
+            Bio / About You:<br>
+            <textarea name="bio" rows="4" cols="40"></textarea><br><br>
+            <input type="hidden" name="studentID" value="123456"><br>
+            <input type="checkbox" name="terms" required> I accept the Terms & Conditions<br><br>
+        </fieldset>
+
+        <!-- 5. Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
