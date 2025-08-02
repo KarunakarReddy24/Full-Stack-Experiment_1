@@ -6,7 +6,6 @@
 <body>
     <h2>Student Registration Form</h2>
     <form>
-        <!-- 1. Personal Information -->
         <fieldset>
             <legend>1. Personal Information</legend>
             First Name: <input type="text" name="firstName" required><br><br>
@@ -20,8 +19,6 @@
             Mobile Number: <input type="tel" name="mobile"><br><br>
             Favorite Color: <input type="color" name="favColor"><br><br>
         </fieldset>
-
-        <!-- 2. Academic Information -->
         <fieldset>
             <legend>2. Academic Information</legend>
             Roll Number: <input type="number" name="roll"><br><br>
@@ -38,15 +35,11 @@
             Preferred Lab Time: <input type="time" name="labTime"><br><br>
             Graduation Month: <input type="month" name="gradMonth"><br><br>
         </fieldset>
-
-        <!-- 3. Documents Upload -->
         <fieldset>
             <legend>3. Documents Upload</legend>
             Passport Size Photo: <input type="file" name="photo"><br><br>
             Upload Marksheet or ID Proof: <input type="file" name="document"><br><br>
         </fieldset>
-
-        <!-- 4. Additional Info -->
         <fieldset>
             <legend>4. Additional Info</legend>
             Personal Website / LinkedIn: <input type="url" name="website"><br><br>
@@ -55,8 +48,6 @@
             <input type="hidden" name="studentID" value="123456"><br>
             <input type="checkbox" name="terms" required> I accept the Terms & Conditions<br><br>
         </fieldset>
-
-        <!-- 5. Buttons -->
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
     </form>
